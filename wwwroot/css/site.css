@@ -1,0 +1,244 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+/* index-styles.css */
+.bg-animation {
+    position: relative;
+    background-image: url('path-to-your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+    .overlay h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    .overlay p {
+        font-size: 1.2rem;
+    }
+
+
+.portfolio-section {
+    background-color: #f5f5f5;
+    padding: 80px 0;
+    color: #333;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.portfolio-item {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+    .portfolio-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-item h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-item p {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .portfolio-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+    }
+/* index-styles.css */
+/* ... your existing styles ... */
+
+.about-section {
+    background-color: #fff;
+    padding: 80px 0;
+    color: #333;
+}
+
+.profile-image {
+    max-width: 50%; /* Adjust the percentage to your desired size */
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.about-content h3 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Add your custom styles here */
+
+.contact-info {
+    background-color:lightcyan;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .contact-info h3 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .contact-info p {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+.contact-form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .contact-form h3 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+.form-group label {
+    font-size: 1.2rem;
+}
+
+.form-control {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+
+
+.bg-animation {
+    /* ... your existing background styles ... */
+    background-size: 800% 800%;
+    animation: backgroundAnimation 20s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-image: linear-gradient(135deg, #FF6B6B, #1ECD97, #3B82F6, #9333EA);
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-image: linear-gradient(135deg, #1ECD97, #3B82F6, #9333EA, #FF6B6B);
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-image: linear-gradient(135deg, #3B82F6, #9333EA, #FF6B6B, #1ECD97);
+        background-position: 0% 0%;
+    }
+}
+
+
+.skills-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.skill-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+    .skill-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+.skill-icon {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.skill-description {
+    font-size: 0.9rem;
+    color: #777;
+}
