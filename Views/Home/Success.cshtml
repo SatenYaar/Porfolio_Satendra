@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Success";
+    Layout = null; // Disable layout for this view
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .alert-container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 0.5s;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .icon-container {
+            text-align: center;
+        }
+
+        .icon {
+            font-size: 4rem;
+            color: #28a745;
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        .thank-you {
+            font-size: 1.5rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container hidden" id="successContainer">
+        <div class="alert-container">
+            <div class="icon-container">
+                <div class="icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+            </div>
+            <div class="message">
+                <h4 class="alert-heading">Success!</h4>
+                <p>@TempData["SuccessMessage"]</p>
+            </div>
+            <div class="thank-you">
+                Thank you for Contacting Us.
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        // Wait for the DOM to load
+        document.addEventListener('DOMContentLoaded', function () {
+            // Show the success container
+            document.getElementById('successContainer').classList.remove('hidden');
+
+            // Set timeout to redirect after 5 seconds (5000 milliseconds)
+            setTimeout(function () {
+                window.location.href = '/'; // Redirect to home page
+            }, 5000); // 5000 milliseconds = 5 seconds
+        });
+    </script>
+</body>
+</html>

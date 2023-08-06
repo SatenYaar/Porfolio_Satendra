@@ -3,13 +3,36 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="~/img/favicon.ico" />
+
     <title>@ViewData["Title"] - Portfolio_Satendra</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Porfolio_Satendra.styles.css" asp-append-version="true" />
+    <style>
+        /* Add this CSS to your existing styles */
+       
+        .navbar-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #ff7854, #fd267d, #28b5b5, #1f3a93);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .navbar:hover .navbar-bg {
+            opacity: 1;
+        }
+
+
+    </style>
 </head>
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
@@ -38,10 +61,13 @@
                     </ul>
                 </div>
             </div>
+            <div class="navbar-bg"></div> <!-- Add this div for the background effect -->
         </nav>
     </header>
+
+
     <div class="">
-        <main role="main" >
+        <main role="main">
             @RenderBody()
         </main>
     </div>

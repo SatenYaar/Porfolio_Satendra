@@ -92,8 +92,6 @@ body {
         transform: translateY(-5px);
         box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
     }
-/* index-styles.css */
-/* ... your existing styles ... */
 
 .about-section {
     background-color: #fff;
@@ -119,10 +117,8 @@ body {
     line-height: 1.6;
 }
 
-/* Add your custom styles here */
-
 .contact-info {
-    background-color:lightcyan;
+    background-color: lightcyan;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
@@ -168,12 +164,102 @@ body {
         background-color: #0056b3;
     }
 
-
-
 .bg-animation {
-    /* ... your existing background styles ... */
+    background-size: 800% 800%;
+    animation: backgroundAnimation 30s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-image: linear-gradient(135deg, #FF6B6B, #1ECD97, #3B82F6, #9333EA, #FBBF24, #10B981, #EF4444, #8B5CF6);
+        background-position: 0% 0%;
+    }
+
+    12.5% {
+        background-image: linear-gradient(135deg, #1ECD97, #3B82F6, #9333EA, #FBBF24, #10B981, #EF4444, #8B5CF6, #4ADE80);
+        background-position: 100% 0%;
+    }
+
+    25% {
+        background-image: linear-gradient(135deg, #3B82F6, #9333EA, #FBBF24, #10B981, #EF4444, #8B5CF6, #4ADE80, #F472B6);
+        background-position: 0% 100%;
+    }
+
+    37.5% {
+        background-image: linear-gradient(135deg, #9333EA, #FBBF24, #10B981, #EF4444, #8B5CF6, #4ADE80, #F472B6, #22D3EE);
+        background-position: 100% 100%;
+    }
+
+    50% {
+        background-image: linear-gradient(135deg, #FBBF24, #10B981, #EF4444, #8B5CF6, #4ADE80, #F472B6, #22D3EE, #6366F1);
+        background-position: 0% 0%;
+    }
+
+    62.5% {
+        background-image: linear-gradient(135deg, #10B981, #EF4444, #8B5CF6, #4ADE80, #F472B6, #22D3EE, #6366F1, #6B7280);
+        background-position: 100% 0%;
+    }
+
+    75% {
+        background-image: linear-gradient(135deg, #EF4444, #8B5CF6, #4ADE80, #F472B6, #22D3EE, #6366F1, #6B7280, #EC4899);
+        background-position: 0% 100%;
+    }
+
+    87.5% {
+        background-image: linear-gradient(135deg, #8B5CF6, #4ADE80, #F472B6, #22D3EE, #6366F1, #6B7280, #EC4899, #F59E0B);
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-image: linear-gradient(135deg, #4ADE80, #F472B6, #22D3EE, #6366F1, #6B7280, #EC4899, #F59E0B, #93C5FD);
+        background-position: 0% 0%;
+    }
+}
+
+
+
+
+/*
+.bg-animation {
     background-size: 800% 800%;
     animation: backgroundAnimation 20s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-image: linear-gradient(135deg, #FF6B6B, #1ECD97, #3B82F6, #9333EA, #FBBF24);
+        background-position: 0% 0%;
+    }
+
+    25% {
+        background-image: linear-gradient(135deg, #1ECD97, #3B82F6, #9333EA, #FBBF24, #10B981);
+        background-position: 100% 0%;
+    }
+
+    50% {
+        background-image: linear-gradient(135deg, #3B82F6, #9333EA, #FBBF24, #10B981, #EF4444);
+        background-position: 0% 100%;
+    }
+
+    75% {
+        background-image: linear-gradient(135deg, #9333EA, #FBBF24, #10B981, #EF4444, #8B5CF6);
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-image: linear-gradient(135deg, #FBBF24, #10B981, #EF4444, #8B5CF6, #4ADE80);
+        background-position: 0% 0%;
+    }
+}
+*/
+
+
+
+
+
+/*.bg-animation {
+    background-size: 800% 800%;
+    animation: backgroundAnimation 15s infinite alternate;
 }
 
 @keyframes backgroundAnimation {
@@ -191,7 +277,7 @@ body {
         background-image: linear-gradient(135deg, #3B82F6, #9333EA, #FF6B6B, #1ECD97);
         background-position: 0% 0%;
     }
-}
+}*/
 
 
 .skills-section {
@@ -241,4 +327,17 @@ body {
 .skill-description {
     font-size: 0.9rem;
     color: #777;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
