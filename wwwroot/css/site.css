@@ -95,7 +95,7 @@ body {
 
 .about-section {
     background-color: #fff;
-    padding: 80px 0;
+    padding: 50px 0;
     color: #333;
 }
 
@@ -105,7 +105,11 @@ body {
     border-radius: 50%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.contact-section {
+    background-color: #fff;
+    padding: 50px 0;
+    color: #333;
+}
 
 .about-content h3 {
     font-size: 2rem;
@@ -281,8 +285,9 @@ body {
 
 
 .skills-section {
-    padding: 80px 0;
+    padding: 50px 0;
     text-align: center;
+    background-color:whitesmoke;
 }
 
 .section-title {
