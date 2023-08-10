@@ -11,8 +11,8 @@ using Porfolio_Satendra.Data;
 namespace Porfolio_Satendra.Migrations
 {
     [DbContext(typeof(UserDBContext))]
-    [Migration("20230806090612_PortFolio")]
-    partial class PortFolio
+    [Migration("20230810173511_User")]
+    partial class User
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

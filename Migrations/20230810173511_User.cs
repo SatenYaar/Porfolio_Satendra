@@ -5,7 +5,7 @@
 namespace Porfolio_Satendra.Migrations
 {
     /// <inheritdoc />
-    public partial class PortFolio : Migration
+    public partial class User : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
