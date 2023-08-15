@@ -63,9 +63,6 @@ namespace Porfolio_Satendra.Controllers
                     SmtpServer.Send(mail);
                     SmtpServer.Send(ccMail);
 
-
-
-
                     TempData["SuccessMessage"] = "User Information has been successfully added.";
                 }
                 catch (Exception ex)
@@ -92,6 +89,10 @@ namespace Porfolio_Satendra.Controllers
             return View();
         }
 
+        public IActionResult hello()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
